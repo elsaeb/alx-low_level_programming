@@ -1,0 +1,10 @@
+#include "main.h"
+/**
+ * print_sign - check the code
+ * @num: an input character
+ * Return: the last digit of the number
+ */
+int print_last_digit(int num)
+{
+	return(num % 10);
+}
