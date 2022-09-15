@@ -10,11 +10,12 @@ int _isupper(int c)
 {
 	int i, k;
 
-	for (i = 'A'; i <= 'A'; i++)
+	for (i = 'A'; i <= 'Z'; i++)
 	{
 		if (c == i)
 		{
 			k = 1;
+			break;
 		}
 		else
 			k = 0;
