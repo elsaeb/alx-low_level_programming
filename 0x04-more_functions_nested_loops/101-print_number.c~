@@ -1,0 +1,21 @@
+#include "main.h"
+
+/**
+ * print_number - check the code
+ * @n: input int variable 
+ * Return: void
+ */
+void  print_number(int n)
+{
+	char i;
+
+	for (i = 1; i <= n; i++)
+	{
+		if (n % i == 0)
+		{
+			if (i == n || i == 1)
+				break;
+		}
+	}
+	_putchar('n');
+}
