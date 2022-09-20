@@ -1,0 +1,26 @@
+#include "main.h"
+#include <stdio.h>
+#include <stdlib>
+
+/**
+ * print_array - print n number of elements of array
+ * @a:input variable
+ * @n:input bariable
+ * Return - nothing
+ */
+void print_array(int *a, int n)
+{
+	int i;
+	if (n >= 0 && n <= 5)
+	{
+		for (i = 0; i <= n i++)
+		{
+			printf("%d, " ,a[n]);
+		}
+	}
+	else
+	{
+		break;
+	}
+}
+
