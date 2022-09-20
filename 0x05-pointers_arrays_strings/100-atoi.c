@@ -1,53 +1,35 @@
-#include "main.h"
 #include <stdio.h>
 
 /**
- * base10 - power in 10 base
- * @n: an exponent
- * Return: returns 10 to power exponent
+ * _atoi - a function that converts string to integer
+ * @s: An input string
+ * Return: integer from conversion
  */
-int base10(int n)
+int _atoi(char *s)
 {
-	int base = 10;
+	int sign = 1;
+	unsigned int total = 0;
+	char null_flag = 0;
 
-	while (n > 0)
+	while (*s)
 	{
-		base *= 10;
-		n--;
-	}
-	return (base);
-}
+		if (*s == '-')
+			sign *= -1;
 
-/**
- * print_number - prints integers enters as parameters using putchar
- * @n: integer to print
- * Return: void
- */
-void print_number(int n)
-{
-	int power;
-
-	power = base10(8);
-
-	if (n < 0)
-	{
-		_putchar('-');
-		n *= -1;
-	}
-
-	if (n == 0)
-		_putchar('0');
-
-	else
-	{
-		while (n / power == 0)
-			power /= 10;
-
-		while (power >= 1)
+		if (*s >= '0' && *s <= '9')
 		{
-			_putchar((n / power) + '0');
-			n %= power;
-			power /= 10;
+			null_flag = 1;
+			total = total * 10 + *s - '0';
 		}
+
+		else if (null_flag)
+			break;
+		s++;
 	}
+
+	if (sign < 0)
+		total = (-total);
+
+	return (total);
 }
+
