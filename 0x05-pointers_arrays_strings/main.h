@@ -9,3 +9,4 @@ int _putchar(char c);
 void print_rev(char *s); 
 void print_array(int *a, int n);
 int _atoi(char *s);
+char *_strcpy(char *dest, char *src);
