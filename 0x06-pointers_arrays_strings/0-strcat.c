@@ -1,0 +1,18 @@
+#include "main.h"
+/**
+ * _strcat - concatenate two strings
+ * @dest: input variable pointer
+ * @src: input variable poointer
+ * Return: the resulting destination variable
+ */
+char *_strcat(char *dest, char *src)
+{
+	int i;
+
+	for (i = 0; i <= 6; i++)
+	{
+		dest[6 + i] = src[i];
+	}
+	return (dest);
+}
+
