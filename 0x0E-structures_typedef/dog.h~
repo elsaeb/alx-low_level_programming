@@ -1,0 +1,16 @@
+#ifndef dog
+#define dog
+/**
+ * struct dog - structure contains character pointer and a float
+ * @name: first member
+ * @age: second member
+ * @owner: third member
+ */
+
+struct dog
+{
+	char *name;
+	float age;
+	char *owner;
+};
+#endif
