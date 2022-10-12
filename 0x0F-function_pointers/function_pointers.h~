@@ -1,0 +1,4 @@
+#ifndef P_NAME
+#define P_NAME
+#endif
+void print_name(char *name, void (*f)(char *));
