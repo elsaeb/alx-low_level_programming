@@ -1,0 +1,10 @@
+#include "lists.h"
+#include <stdio.h"
+
+/**
+ * print_list - A function that prints a linked list 
+ * @n: pointer to head of list
+ * Return: number of nodes in list_t
+ */
+
+size_t print_list(const
