@@ -13,10 +13,10 @@ size_t list_len(const list_t *head)
 	unsigned int nodes = 0;
 
 
-	while(head)
+	while (head)
 	{
 		nodes++;
 		head = head->next;
 	}
-	return(nodes);
+	return (nodes);
 }
